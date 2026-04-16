@@ -1,0 +1,1490 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Бюро "Статус Права" | Юридическая консультация в Москве</title>
+  <meta name="description" content="Юридическое бюро в Москве: автоюрист, семейные споры, защита прав потребителей, банкротство. Запись на консультацию онлайн за 1 минуту." />
+  <meta name="theme-color" content="#10233a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:title" content="Статус Права — юридическая помощь в сложных ситуациях" />
+  <meta property="og:description" content="Кейсы выигранных дел, экспертные статьи, FAQ и срочная консультация." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,500;7..72,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Бюро \"Статус Права\"",
+    "description": "Юридические консультации для физических лиц и бизнеса",
+    "telephone": "+7-495-123-45-67",
+    "url": "https://example.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ул. Большая Якиманка, 21",
+      "addressLocality": "Москва",
+      "addressCountry": "RU"
+    },
+    "openingHours": "Mo-Sa 09:00-21:00",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://t.me/example",
+      "https://wa.me/74951234567"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Сколько длится первичная консультация?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Обычно 30-45 минут. В срочных случаях возможна экспресс-консультация в день обращения."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Можно ли работать дистанционно?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Да, проводим консультации по видео и сопровождаем дела удаленно в пределах законодательства РФ."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Как оценивается стоимость услуг?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "После изучения документов мы фиксируем этапы работ, сроки и бюджет в договоре без скрытых платежей."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #f5f8fc;
+      --surface: #ffffff;
+      --surface-soft: #eef3f9;
+      --ink: #132033;
+      --ink-soft: #42566f;
+      --primary: #11355f;
+      --primary-2: #1a4e8a;
+      --accent: #c69c5d;
+      --line: #d5e0ec;
+      --shadow: 0 16px 36px rgba(16, 35, 58, 0.12);
+      --radius: 18px;
+      --container: min(1160px, calc(100% - 2rem));
+      --transition: 220ms cubic-bezier(.2, .8, .2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Manrope", "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 0% -20%, rgba(17, 53, 95, 0.12), rgba(17, 53, 95, 0) 45%),
+        linear-gradient(180deg, #f8fbff 0%, #f3f7fb 45%, #f8fbff 100%);
+      line-height: 1.5;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 0.6rem;
+      top: -300px;
+      z-index: 120;
+      background: #0e1f34;
+      color: #fff;
+      border-radius: 0.45rem;
+      padding: 0.7rem 0.9rem;
+    }
+
+    .skip-link:focus {
+      top: 0.6rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: var(--container);
+      margin-inline: auto;
+    }
+
+    .section {
+      padding: 4.8rem 0;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: var(--primary-2);
+      margin-bottom: 0.85rem;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 1.8rem;
+      height: 2px;
+      background: currentColor;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin: 0;
+      line-height: 1.1;
+    }
+
+    h1,
+    h2 {
+      font-family: "Literata", Georgia, serif;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: clamp(2.1rem, 4.8vw, 3.8rem);
+      max-width: 11.5ch;
+    }
+
+    h2 {
+      font-size: clamp(1.75rem, 3.8vw, 2.7rem);
+      max-width: 18ch;
+    }
+
+    h3 {
+      font-size: 1.24rem;
+      font-weight: 800;
+    }
+
+    p {
+      margin: 0;
+      color: var(--ink-soft);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      padding: 0.78rem 1.2rem;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition), color var(--transition), border-color var(--transition);
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      transform: translateY(-2px);
+      box-shadow: 0 9px 18px rgba(16, 35, 58, 0.2);
+    }
+
+    .btn:focus-visible,
+    .nav-link:focus-visible,
+    .social-link:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible,
+    button:focus-visible,
+    summary:focus-visible {
+      outline: 3px solid #1258cb;
+      outline-offset: 2px;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(120deg, var(--primary), #1f4b7e);
+    }
+
+    .btn-ghost {
+      color: var(--ink);
+      border-color: var(--line);
+      background: #fff;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 60;
+      border-bottom: 1px solid rgba(203, 218, 234, 0.9);
+      background: rgba(248, 251, 255, 0.88);
+      backdrop-filter: blur(9px);
+    }
+
+    .topbar-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-weight: 800;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #15273d;
+    }
+
+    .brand-mark {
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 0.55rem;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-family: "Literata", serif;
+      background: linear-gradient(135deg, #112c4b, #235892);
+      box-shadow: 0 10px 18px rgba(17, 44, 75, 0.25);
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    .nav-link {
+      display: inline-block;
+      padding: 0.5rem 0.68rem;
+      border-radius: 0.55rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #2c415a;
+      transition: background var(--transition);
+    }
+
+    .nav-link:hover {
+      background: #fff;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 0.65rem;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      padding: 2.2rem 0 4.4rem;
+    }
+
+    .breadcrumbs {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.4rem 0.72rem;
+      font-size: 0.8rem;
+      background: #fff;
+      color: #5a6d83;
+      margin-bottom: 1rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 1rem;
+    }
+
+    .hero-card {
+      border: 1px solid #d1deeb;
+      border-radius: calc(var(--radius) + 4px);
+      background:
+        linear-gradient(150deg, rgba(255,255,255,0.95), rgba(234, 242, 250, 0.92));
+      padding: 1.65rem;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      right: -5rem;
+      top: -5rem;
+      width: 16rem;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(17,53,95,0.25), rgba(17,53,95,0));
+      z-index: -1;
+    }
+
+    .hero p {
+      margin: 1rem 0 1.25rem;
+      max-width: 60ch;
+      color: #334a62;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-bottom: 1.15rem;
+    }
+
+    .hero-points {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.65rem;
+    }
+
+    .hero-point {
+      border: 1px solid #d4e0ec;
+      border-radius: 0.85rem;
+      background: rgba(255, 255, 255, 0.78);
+      padding: 0.72rem;
+    }
+
+    .hero-point strong {
+      display: block;
+      color: #16283f;
+      font-size: 1.12rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .hero-side {
+      display: grid;
+      gap: 0.75rem;
+      align-content: start;
+    }
+
+    .panel {
+      border: 1px solid #d2deea;
+      border-radius: 1rem;
+      background: #fff;
+      padding: 0.95rem;
+      box-shadow: 0 10px 22px rgba(16, 35, 58, 0.09);
+    }
+
+    .panel h3 {
+      font-size: 1.12rem;
+      margin-bottom: 0.6rem;
+      font-family: "Manrope", sans-serif;
+      font-weight: 800;
+    }
+
+    .badge {
+      display: inline-flex;
+      width: fit-content;
+      border-radius: 999px;
+      padding: 0.26rem 0.52rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #fff;
+      background: linear-gradient(120deg, var(--accent), #b68645);
+      margin-bottom: 0.45rem;
+    }
+
+    .list {
+      display: grid;
+      gap: 0.45rem;
+    }
+
+    .list-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      border-bottom: 1px dashed #dfe8f1;
+      padding-bottom: 0.4rem;
+      font-size: 0.91rem;
+      color: #334960;
+    }
+
+    .list-row:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .social-links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.45rem;
+      margin-top: 0.7rem;
+    }
+
+    .social-link {
+      border: 1px solid var(--line);
+      border-radius: 0.72rem;
+      padding: 0.56rem;
+      text-align: center;
+      font-size: 0.84rem;
+      font-weight: 700;
+      background: #fff;
+      color: #2a3f55;
+    }
+
+    .section-head {
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 0.8rem;
+    }
+
+    .section-head p {
+      max-width: 47ch;
+    }
+
+    .services-grid,
+    .steps-grid,
+    .cases-grid,
+    .team-grid,
+    .reviews-grid,
+    .blog-grid {
+      display: grid;
+      gap: 0.85rem;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      border: 1px solid #d3dfeb;
+      border-radius: var(--radius);
+      background: #fff;
+      padding: 1rem;
+      box-shadow: 0 10px 22px rgba(16, 35, 58, 0.08);
+    }
+
+    .service-card h3 {
+      margin-bottom: 0.4rem;
+    }
+
+    .service-meta {
+      margin-top: 0.7rem;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.6rem;
+      color: #3f556d;
+      font-size: 0.87rem;
+      font-weight: 700;
+    }
+
+    .step-number {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-family: "Literata", serif;
+      font-weight: 700;
+      color: #fff;
+      background: linear-gradient(130deg, #12365c, #1d4f88);
+      margin-bottom: 0.6rem;
+    }
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.95rem;
+    }
+
+    .filter-btn {
+      border: 1px solid #cfdbe8;
+      border-radius: 999px;
+      background: #fff;
+      color: #2f4358;
+      font-size: 0.83rem;
+      font-weight: 700;
+      padding: 0.4rem 0.72rem;
+      cursor: pointer;
+    }
+
+    .filter-btn[aria-pressed="true"] {
+      color: #fff;
+      border-color: transparent;
+      background: #132f51;
+    }
+
+    .case-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .case-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .case-status {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 0.2rem 0.48rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #fff;
+      background: linear-gradient(120deg, #2a7e4f, #399f66);
+    }
+
+    .case-id {
+      font-size: 0.76rem;
+      color: #667d94;
+      font-weight: 700;
+    }
+
+    .case-metrics {
+      margin-top: 0.7rem;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.5rem;
+    }
+
+    .metric {
+      border: 1px solid #dae4ef;
+      border-radius: 0.72rem;
+      padding: 0.55rem;
+      background: #f9fbfd;
+    }
+
+    .metric strong {
+      display: block;
+      color: #203850;
+      margin-bottom: 0.15rem;
+      font-size: 1rem;
+    }
+
+    .team-photo {
+      border-radius: 0.75rem;
+      aspect-ratio: 3 / 3.2;
+      margin-bottom: 0.65rem;
+      object-fit: cover;
+      width: 100%;
+      background: #dbe5ef;
+    }
+
+    .team-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-top: 0.65rem;
+    }
+
+    .team-tag {
+      border: 1px solid #d8e3ee;
+      background: #f8fbff;
+      border-radius: 999px;
+      padding: 0.24rem 0.5rem;
+      font-size: 0.74rem;
+      color: #3f556e;
+    }
+
+    .reviews-grid .card {
+      background: linear-gradient(160deg, #fff, #f2f7fb);
+    }
+
+    .review-author {
+      margin-top: 0.6rem;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #415872;
+    }
+
+    .blog-media {
+      border-radius: 0.72rem;
+      aspect-ratio: 16 / 10;
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 0.72rem;
+      background: #d6e1ec;
+    }
+
+    details {
+      border: 1px solid #d1deeb;
+      border-radius: 0.8rem;
+      padding: 0.72rem 0.8rem;
+      background: #fff;
+    }
+
+    details + details {
+      margin-top: 0.55rem;
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 700;
+      color: #2a4057;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details p {
+      margin-top: 0.52rem;
+      max-width: 72ch;
+    }
+
+    .cta-strip {
+      margin-top: 1rem;
+      border: 1px solid #cfddeb;
+      border-radius: 1rem;
+      background: linear-gradient(140deg, #18395f, #0f2742);
+      color: #fff;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .cta-strip p {
+      color: rgba(255, 255, 255, 0.87);
+    }
+
+    .booking {
+      background: linear-gradient(180deg, #eef4fa, #f8fbff);
+      border-top: 1px solid #d5e1ec;
+      border-bottom: 1px solid #d5e1ec;
+    }
+
+    .booking-grid,
+    .contacts-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.9fr;
+      gap: 0.9rem;
+      align-items: start;
+    }
+
+    .field {
+      display: grid;
+      gap: 0.34rem;
+      margin-bottom: 0.75rem;
+    }
+
+    label {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #354b63;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      border: 1px solid #c9d7e4;
+      border-radius: 0.75rem;
+      padding: 0.67rem 0.78rem;
+      font: inherit;
+      color: var(--ink);
+      background: #fff;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #99b0c8;
+      box-shadow: 0 0 0 3px rgba(17, 53, 95, 0.14);
+      outline: none;
+    }
+
+    .check {
+      display: flex;
+      gap: 0.55rem;
+      align-items: flex-start;
+      color: #40556b;
+      font-size: 0.89rem;
+    }
+
+    .check input {
+      width: 0.95rem;
+      height: 0.95rem;
+      margin-top: 0.15rem;
+    }
+
+    .success {
+      min-height: 1.25rem;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #1d5a8f;
+    }
+
+    .legal {
+      margin-top: 0.8rem;
+      font-size: 0.77rem;
+      color: #61788f;
+      max-width: 58ch;
+    }
+
+    .map {
+      border: 1px solid #cfdde9;
+      border-radius: 1rem;
+      min-height: 260px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 1rem;
+      background:
+        linear-gradient(rgba(255,255,255,0.58), rgba(255,255,255,0.86)),
+        repeating-linear-gradient(45deg, #dce6f1 0 11px, #e7eef6 11px 22px);
+    }
+
+    footer {
+      padding: 1.35rem 0 3rem;
+    }
+
+    .footer-grid {
+      border-top: 1px solid #d2e0ec;
+      padding-top: 0.9rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.6rem;
+      color: #60768c;
+      font-size: 0.88rem;
+    }
+
+    .sticky {
+      position: fixed;
+      right: 0.75rem;
+      bottom: 0.75rem;
+      display: grid;
+      gap: 0.4rem;
+      z-index: 45;
+    }
+
+    .sticky a {
+      border: 1px solid #cfdae5;
+      background: #fff;
+      color: #2e435a;
+      border-radius: 999px;
+      padding: 0.52rem 0.66rem;
+      font-size: 0.78rem;
+      font-weight: 800;
+      box-shadow: 0 7px 16px rgba(16, 35, 58, 0.18);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(14px);
+      transition: opacity 420ms ease, transform 420ms ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (max-width: 1020px) {
+      .menu-toggle {
+        display: inline-grid;
+        place-items: center;
+      }
+
+      .main-nav {
+        position: relative;
+      }
+
+      .nav-list {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 0.55rem);
+        width: min(86vw, 18rem);
+        border-radius: 0.92rem;
+        border: 1px solid #d0deea;
+        background: #fff;
+        box-shadow: var(--shadow);
+        padding: 0.5rem;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .nav-list.open {
+        display: flex;
+      }
+
+      .hero-grid,
+      .booking-grid,
+      .contacts-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid,
+      .steps-grid,
+      .cases-grid,
+      .team-grid,
+      .reviews-grid,
+      .blog-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .hero-points {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .section {
+        padding: 3.5rem 0;
+      }
+
+      .services-grid,
+      .steps-grid,
+      .cases-grid,
+      .team-grid,
+      .reviews-grid,
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card,
+      .panel,
+      .card {
+        padding: 0.9rem;
+      }
+
+      .topbar-inner {
+        min-height: 70px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      * {
+        transition: none !important;
+        animation: none !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к контенту</a>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#home" aria-label="Статус Права, главная">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        Статус Права
+      </a>
+
+      <nav class="main-nav" aria-label="Главное меню">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul class="nav-list" id="nav-list">
+          <li><a class="nav-link" href="#services">Услуги</a></li>
+          <li><a class="nav-link" href="#cases">Кейсы</a></li>
+          <li><a class="nav-link" href="#team">Команда</a></li>
+          <li><a class="nav-link" href="#blog">Статьи</a></li>
+          <li><a class="nav-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn-primary" href="#booking">Консультация</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="container">
+        <nav class="breadcrumbs" aria-label="Хлебные крошки">
+          <span>Главная</span>
+          <span aria-hidden="true">›</span>
+          <span>Юридическое бюро</span>
+        </nav>
+
+        <div class="hero-grid">
+          <article class="hero-card reveal">
+            <span class="eyebrow">Юридическая помощь в Москве</span>
+            <h1>Решаем сложные правовые вопросы спокойно и по шагам</h1>
+            <p>
+              От автоюриста и семейных споров до защиты прав потребителей и банкротства.
+              Формируем понятную стратегию, фиксируем этапы и ведем дело до результата.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#booking">Получить консультацию</a>
+              <a class="btn btn-ghost" href="#cases">Смотреть выигранные дела</a>
+            </div>
+
+            <div class="hero-points" role="list" aria-label="Показатели бюро">
+              <div class="hero-point" role="listitem">
+                <strong>12+ лет</strong>
+                <span>юридической практики</span>
+              </div>
+              <div class="hero-point" role="listitem">
+                <strong>1 100+</strong>
+                <span>закрытых дел</span>
+              </div>
+              <div class="hero-point" role="listitem">
+                <strong>4.9 / 5</strong>
+                <span>оценка клиентов</span>
+              </div>
+            </div>
+          </article>
+
+          <aside class="hero-side">
+            <article class="panel reveal">
+              <span class="badge">Срочно</span>
+              <h3>Горячие запросы сегодня</h3>
+              <div class="list">
+                <div class="list-row"><span>Возврат водительских прав</span><strong>12 обращений</strong></div>
+                <div class="list-row"><span>Споры со страховой</span><strong>8 обращений</strong></div>
+                <div class="list-row"><span>Семейные споры</span><strong>6 обращений</strong></div>
+              </div>
+            </article>
+
+            <article class="panel reveal">
+              <h3>Быстрый контакт</h3>
+              <div class="list">
+                <div class="list-row"><span>Телефон</span><a href="tel:+74951234567">+7 (495) 123-45-67</a></div>
+                <div class="list-row"><span>Адрес</span><span>ул. Большая Якиманка, 21</span></div>
+                <div class="list-row"><span>Часы работы</span><span>Пн-Сб 09:00-21:00</span></div>
+              </div>
+
+              <div class="social-links">
+                <a class="social-link" href="https://wa.me/74951234567" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a class="social-link" href="https://t.me/example" target="_blank" rel="noopener noreferrer">Telegram</a>
+              </div>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Услуги</span>
+            <h2>Ключевые направления юридической защиты</h2>
+          </div>
+          <p>Каждое направление включает отдельный лендинг, FAQ, кейсы и форму обращения.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="card service-card reveal">
+            <h3>Автоюрист</h3>
+            <p>Лишение прав, ДТП, споры со страховыми, оспаривание штрафов и административных постановлений.</p>
+            <div class="service-meta"><span>Срок ответа: до 15 мин</span><strong>Приоритет: MVP</strong></div>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Семейное право</h3>
+            <p>Развод, алименты, раздел имущества, порядок общения с детьми, брачные договоры.</p>
+            <div class="service-meta"><span>Консультация: от 30 мин</span><strong>Приоритет: MVP</strong></div>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Права потребителей</h3>
+            <p>Возврат денежных средств, споры по услугам, претензии к продавцам и онлайн-площадкам.</p>
+            <div class="service-meta"><span>Досудебка + суд</span><strong>Приоритет: MVP</strong></div>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Банкротство</h3>
+            <p>Сопровождение физических лиц и предпринимателей, защита от кредитного давления.</p>
+            <div class="service-meta"><span>Персональная стратегия</span><strong>Приоритет: MVP</strong></div>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Миграционные вопросы</h3>
+            <p>Запрет на въезд, депортация, легализация статуса, судебное оспаривание решений.</p>
+            <div class="service-meta"><span>Онлайн по РФ</span><strong>Приоритет: Дополн.</strong></div>
+          </article>
+
+          <article class="card service-card reveal">
+            <h3>Для бизнеса</h3>
+            <p>Договорная работа, взыскание задолженности, корпоративные споры и юридический аудит.</p>
+            <div class="service-meta"><span>B2B поддержка</span><strong>Приоритет: Дополн.</strong></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Как работаем</span>
+            <h2>Понятный процесс без юридического тумана</h2>
+          </div>
+          <p>Клиент сразу понимает, какие шаги мы делаем и какой результат ожидаем.</p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="card reveal">
+            <div class="step-number">1</div>
+            <h3>Разбор ситуации</h3>
+            <p>Уточняем факты, изучаем документы, фиксируем риски и срочность дела.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="step-number">2</div>
+            <h3>Стратегия и план</h3>
+            <p>Определяем правовую позицию, этапы, сроки и варианты развития событий.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="step-number">3</div>
+            <h3>Подготовка документов</h3>
+            <p>Формируем претензии, ходатайства, иски и все процессуальные материалы.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="step-number">4</div>
+            <h3>Представительство</h3>
+            <p>Ведем переговоры и защищаем интересы клиента в суде и госорганах.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="step-number">5</div>
+            <h3>Контроль исполнения</h3>
+            <p>Сопровождаем до фактического результата, включая исполнительное производство.</p>
+          </article>
+
+          <article class="card reveal">
+            <div class="step-number">6</div>
+            <h3>Постподдержка</h3>
+            <p>Остаемся на связи по смежным вопросам и профилактике повторных рисков.</p>
+          </article>
+        </div>
+
+        <div class="cta-strip reveal">
+          <div>
+            <h3 style="color:#fff; font-family:Literata,serif; margin-bottom:0.35rem;">Нужна срочная консультация по делу?</h3>
+            <p>Оставьте номер — юрист перезвонит в течение 5-15 минут в рабочее время.</p>
+          </div>
+          <a class="btn btn-ghost" href="#booking">Заказать звонок</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cases">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Кейсы</span>
+            <h2>Примеры выигранных дел</h2>
+          </div>
+          <p>Фильтруйте кейсы по направлениям и смотрите фактический результат.</p>
+        </div>
+
+        <div class="filters" role="toolbar" aria-label="Фильтры кейсов">
+          <button class="filter-btn" data-filter="all" aria-pressed="true">Все</button>
+          <button class="filter-btn" data-filter="auto" aria-pressed="false">Автоюрист</button>
+          <button class="filter-btn" data-filter="family" aria-pressed="false">Семейное</button>
+          <button class="filter-btn" data-filter="consumer" aria-pressed="false">Потребитель</button>
+        </div>
+
+        <div class="cases-grid">
+          <article class="card case-card reveal" data-category="auto">
+            <div class="case-header">
+              <span class="case-status">Выиграно</span>
+              <span class="case-id">Дело № A-247/2026</span>
+            </div>
+            <h3>Возврат водительских прав</h3>
+            <p>Оспорили протокол, доказали процессуальные нарушения и отменили лишение.</p>
+            <div class="case-metrics">
+              <div class="metric"><strong>21 день</strong><span>срок решения</span></div>
+              <div class="metric"><strong>0 ₽ штрафа</strong><span>для клиента</span></div>
+            </div>
+          </article>
+
+          <article class="card case-card reveal" data-category="family">
+            <div class="case-header">
+              <span class="case-status">Выиграно</span>
+              <span class="case-id">Дело № F-083/2026</span>
+            </div>
+            <h3>Раздел имущества без затяжного суда</h3>
+            <p>Закрепили справедливые доли и заключили мировое соглашение в интересах клиента.</p>
+            <div class="case-metrics">
+              <div class="metric"><strong>1.5 месяца</strong><span>до результата</span></div>
+              <div class="metric"><strong>2.8 млн ₽</strong><span>сохранено активов</span></div>
+            </div>
+          </article>
+
+          <article class="card case-card reveal" data-category="consumer">
+            <div class="case-header">
+              <span class="case-status">Выиграно</span>
+              <span class="case-id">Дело № C-512/2026</span>
+            </div>
+            <h3>Возврат денег за некачественную услугу</h3>
+            <p>Взыскали стоимость услуги, неустойку и компенсацию морального вреда.</p>
+            <div class="case-metrics">
+              <div class="metric"><strong>43 дня</strong><span>полный цикл</span></div>
+              <div class="metric"><strong>+190 000 ₽</strong><span>в пользу клиента</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Команда</span>
+            <h2>Адвокаты и юристы с подтвержденной практикой</h2>
+          </div>
+          <p>Профили, специализация и опыт — чтобы клиент понимал, кому доверяет дело.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="card reveal">
+            <img class="team-photo" src="https://images.unsplash.com/photo-1556157382-97eda2f9e2bf?auto=format&fit=crop&w=800&q=70" alt="Портрет управляющего партнера" loading="lazy" />
+            <h3>Алексей Воронов</h3>
+            <p>Управляющий партнер, судебная практика по административным и гражданским делам.</p>
+            <div class="team-tags">
+              <span class="team-tag">12 лет опыта</span>
+              <span class="team-tag">Автоюрист</span>
+              <span class="team-tag">Суды общей юрисдикции</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <img class="team-photo" src="https://images.unsplash.com/photo-1573497019236-61f323342ebf?auto=format&fit=crop&w=800&q=70" alt="Портрет юриста по семейному праву" loading="lazy" />
+            <h3>Екатерина Мельникова</h3>
+            <p>Руководитель направления семейных споров и переговорных стратегий.</p>
+            <div class="team-tags">
+              <span class="team-tag">9 лет опыта</span>
+              <span class="team-tag">Семейное право</span>
+              <span class="team-tag">Медиация</span>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <img class="team-photo" src="https://images.unsplash.com/photo-1589571894960-20bbe2828d0a?auto=format&fit=crop&w=800&q=70" alt="Портрет юриста по защите прав потребителей" loading="lazy" />
+            <h3>Роман Гребнев</h3>
+            <p>Специалист по потребительским и договорным спорам, досудебному урегулированию.</p>
+            <div class="team-tags">
+              <span class="team-tag">8 лет опыта</span>
+              <span class="team-tag">Потребительские споры</span>
+              <span class="team-tag">B2B договоры</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Отзывы</span>
+            <h2>Оценка работы бюро клиентами</h2>
+          </div>
+          <p>Социальное доказательство на первом экране и на страницах услуг повышает доверие.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="card reveal">
+            <p>«Ситуация с лишением прав была критической. Команда быстро собрала позицию и довела дело до победы.»</p>
+            <div class="review-author">Илья, дело по КоАП</div>
+          </article>
+
+          <article class="card reveal">
+            <p>«Четко объяснили стратегию по семейному спору, без лишних обещаний. Результат полностью устроил.»</p>
+            <div class="review-author">Марина, семейное право</div>
+          </article>
+
+          <article class="card reveal">
+            <p>«Помогли вернуть деньги и компенсацию по потребительскому спору. Всегда были на связи по этапам.»</p>
+            <div class="review-author">Сергей, защита прав потребителей</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="blog">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">Статьи</span>
+            <h2>Экспертный блог для SEO и пользы клиенту</h2>
+          </div>
+          <p>Публикации по поисковым запросам «юрист по ДТП», «как вернуть права», «консультация онлайн».</p>
+        </div>
+
+        <div class="blog-grid">
+          <article class="card reveal">
+            <img class="blog-media" src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=70" alt="Документы и ручка на столе юриста" loading="lazy" />
+            <h3>Как вернуть водительские права: пошаговый алгоритм</h3>
+            <p>Разбираем типовые ошибки в протоколах и рабочую стратегию защиты в 2026 году.</p>
+          </article>
+
+          <article class="card reveal">
+            <img class="blog-media" src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?auto=format&fit=crop&w=900&q=70" alt="Юридическая консультация с клиентом" loading="lazy" />
+            <h3>Суд или мировое соглашение в семейном споре</h3>
+            <p>Когда выгоднее идти в суд, а когда лучше зафиксировать договоренности мирно.</p>
+          </article>
+
+          <article class="card reveal">
+            <img class="blog-media" src="https://images.unsplash.com/photo-1453945619913-79ec89a82c51?auto=format&fit=crop&w=900&q=70" alt="Здание суда и папки с делами" loading="lazy" />
+            <h3>Потребительские споры: что делать до иска</h3>
+            <p>Претензионный порядок, доказательства и как увеличить шансы на возмещение.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <span class="eyebrow">FAQ</span>
+            <h2>Частые вопросы перед обращением</h2>
+          </div>
+          <p>Короткие ответы, чтобы быстрее принять решение и не терять время в срочной ситуации.</p>
+        </div>
+
+        <details class="reveal">
+          <summary>Сколько длится первичная консультация?</summary>
+          <p>Обычно 30-45 минут. По срочным вопросам возможен быстрый созвон в день обращения.</p>
+        </details>
+
+        <details class="reveal">
+          <summary>Можно ли сопровождать дело дистанционно?</summary>
+          <p>Да, консультируем по видео, принимаем документы онлайн и сопровождаем процесс в рамках действующего законодательства.</p>
+        </details>
+
+        <details class="reveal">
+          <summary>Как формируется стоимость услуги?</summary>
+          <p>После анализа документов фиксируем этапы работ, сроки и бюджет в договоре. Скрытых платежей нет.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section booking" id="booking">
+      <div class="container booking-grid">
+        <article class="reveal">
+          <span class="eyebrow">Консультация</span>
+          <h2 style="margin-bottom:0.75rem;">Оставьте заявку и получите план действий</h2>
+          <p style="max-width:55ch; margin-bottom:0.85rem;">
+            Форма готова для интеграции с CRM (Bitrix24/amoCRM), колл-трекингом и аналитикой.
+            После отправки можно запускать автоуведомления и цепочки e-mail.
+          </p>
+          <div class="card">
+            <strong style="display:block; margin-bottom:0.4rem;">Что уже предусмотрено:</strong>
+            <p>Mobile-first UX, валидация полей, согласие на обработку данных, готовность к подключению reCAPTCHA и cookie-banner.</p>
+          </div>
+        </article>
+
+        <form class="card reveal" id="leadForm" novalidate>
+          <div class="field">
+            <label for="name">Имя</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+          </div>
+
+          <div class="field">
+            <label for="phone">Телефон</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (___) ___-__-__" required />
+          </div>
+
+          <div class="field">
+            <label for="topic">Тема обращения</label>
+            <select id="topic" name="topic" required>
+              <option value="">Выберите тему</option>
+              <option>Автоюрист (лишение прав, ДТП)</option>
+              <option>Семейный спор</option>
+              <option>Защита прав потребителей</option>
+              <option>Банкротство</option>
+              <option>Вопрос для бизнеса</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="date">Удобная дата консультации</label>
+            <input id="date" name="date" type="date" required />
+          </div>
+
+          <div class="field">
+            <label for="message">Коротко о ситуации</label>
+            <textarea id="message" name="message" rows="3" placeholder="Опишите, что произошло и какие документы уже есть"></textarea>
+          </div>
+
+          <label class="check" style="margin-bottom:0.55rem;">
+            <input type="checkbox" required />
+            Согласен(а) на обработку персональных данных
+          </label>
+
+          <button class="btn btn-primary" type="submit">Отправить заявку</button>
+          <div class="success" id="successMessage" aria-live="polite"></div>
+
+          <p class="legal">
+            Для продакшна добавьте страницы «Политика конфиденциальности» и «Пользовательское соглашение»,
+            а также серверную валидацию, защиту от CSRF/XSS и хранение персональных данных по 152-ФЗ.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section" id="contacts">
+      <div class="container contacts-grid">
+        <article class="card reveal">
+          <span class="eyebrow">Контакты</span>
+          <h2 style="margin-bottom:0.7rem;">Бюро "Статус Права"</h2>
+          <p style="margin-bottom:0.55rem;">Москва, ул. Большая Якиманка, 21</p>
+          <p style="margin-bottom:0.55rem;">Пн-Сб: 09:00-21:00</p>
+          <p style="margin-bottom:0.55rem;">Телефон: <a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+          <p>E-mail: <a href="mailto:info@status-prava.ru">info@status-prava.ru</a></p>
+          <a class="btn btn-ghost" style="margin-top:0.8rem;" href="https://maps.google.com/?q=Большая+Якиманка+21+Москва" target="_blank" rel="noopener noreferrer">Построить маршрут</a>
+        </article>
+
+        <div class="map reveal" role="img" aria-label="Карта расположения юридического бюро">
+          <div>
+            <strong style="display:block; margin-bottom:0.45rem; color:#1f3550;">Карта офиса и схема проезда</strong>
+            <p style="margin-bottom:0.8rem; max-width:28ch;">Интерактивная карта подключается через API Яндекс.Карт или Google Maps.</p>
+            <a class="btn btn-primary" href="#booking">Получить консультацию</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <span>© 2026 Бюро "Статус Права"</span>
+      <span>LegalService schema • Accessible • SEO-ready</span>
+    </div>
+  </footer>
+
+  <div class="sticky" aria-label="Быстрые действия">
+    <a href="tel:+74951234567" aria-label="Позвонить в бюро">Call</a>
+    <a href="https://wa.me/74951234567" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp">WA</a>
+    <a href="https://t.me/example" target="_blank" rel="noopener noreferrer" aria-label="Написать в Telegram">TG</a>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+
+    menuToggle.addEventListener('click', () => {
+      const opened = navList.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(opened));
+      menuToggle.textContent = opened ? '✕' : '☰';
+    });
+
+    document.querySelectorAll('.nav-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        navList.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.textContent = '☰';
+      });
+    });
+
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const caseCards = document.querySelectorAll('.case-card');
+
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+
+        filterButtons.forEach((item) => item.setAttribute('aria-pressed', 'false'));
+        button.setAttribute('aria-pressed', 'true');
+
+        caseCards.forEach((card) => {
+          card.hidden = !(filter === 'all' || card.dataset.category === filter);
+        });
+      });
+    });
+
+    const dateInput = document.getElementById('date');
+    const now = new Date();
+    const localDate = new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+    dateInput.min = localDate;
+
+    const leadForm = document.getElementById('leadForm');
+    const successMessage = document.getElementById('successMessage');
+
+    leadForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      if (!leadForm.checkValidity()) {
+        leadForm.reportValidity();
+        return;
+      }
+
+      const name = document.getElementById('name').value.trim();
+      successMessage.textContent = `Спасибо, ${name}. Заявка принята, юрист свяжется с вами в ближайшее время.`;
+      leadForm.reset();
+    });
+
+    const revealItems = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealItems.forEach((item) => io.observe(item));
+  </script>
+</body>
+</html>
